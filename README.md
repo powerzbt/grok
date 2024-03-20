@@ -1,25 +1,37 @@
-# Grok-1
+# Grok-1 Repository
 
-This repository contains JAX example code for loading and running the Grok-1 open-weights model.
+This repository hosts the example code for loading and executing the Grok-1 model, which is available with open weights. The Grok-1 model is a state-of-the-art machine learning model designed for a wide range of applications.
 
-Make sure to download the checkpoint and place `ckpt-0` directory in `checkpoint`.
-Then, run
+## Getting Started
 
-```shell
-pip install -r requirements.txt
-python run.py
-```
+To utilize the Grok-1 model, please follow these instructions:
 
-to test the code.
+1. **Download the Checkpoint**: First, ensure you have downloaded the checkpoint. Place the `ckpt-0` directory within the `checkpoint` folder.
+2. **Install Dependencies**: Install the required Python packages by running the following command in your terminal:
 
-The script loads the checkpoint and samples from the model on a test input.
+    ```shell
+    pip install -r requirements.txt
+    ```
 
-Due to the large size of the model (314B parameters), a machine with enough GPU memory is required to test the model with the example code.
-The implementation of the MoE layer in this repository is not efficient. The implementation was chosen to avoid the need for custom kernels to validate the correctness of the model.
+3. **Execute the Model**: You can run the model using the provided script. Execute the following command:
 
-# Downloading the weights
+    ```shell
+    python run.py
+    ```
 
-You can download the weights using a torrent client and this magnet link:
+This script will load the checkpoint and sample from the model using a test input.
+
+## Requirements
+
+Due to the extensive size of the Grok-1 model, which consists of 314 billion parameters, it is imperative to use a machine equipped with sufficient GPU memory to run the example code effectively.
+
+It is important to note that the implementation of the Mixture of Experts (MoE) layer in this repository prioritizes simplicity over efficiency. This decision was made to eliminate the necessity for custom kernels, thereby facilitating the validation of the model's accuracy.
+
+## Downloading the Model Weights
+
+The Grok-1 model weights can be acquired using a torrent client with the following magnet link:
+
+
 ```
 magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce
 ```
